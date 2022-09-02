@@ -1,0 +1,59 @@
+    1  mkdir laboratorio1
+    2  cd laboratorio1
+    3  touch saludo
+    4  nano saludo
+    5  cat saludo
+    6  file saludo
+    7  md5sum saludo
+    8  sha1sum saludo
+    9  sha256 saludo
+   10  sha256sum saludo
+   11  sha512sum saludo
+   12  shasum saludo
+   13  sha512sum saludo
+   14  sha512sum saludo > checksaludo
+   15  ls
+   16  cat saludo
+   17  cat checksaludo
+   18  sha512sum -c checksaludo
+   19  nano saludo
+   20  sha512sum -c checksaludo
+   21  gnupg
+   22  sudo apt install gnupg
+   23  clear
+   24  gpg --full-generate-key
+   25  gpg --output my_revocation_certificate.asc --gen-revoke labokey
+   26  gpg --output my_revocation_certificate.asc --gen-revoke <key>
+   27  gpg --output my_revocation_certificate.asc --gen-revoke D228E99E9BA76299
+   28  gpg --list-keys
+   29  gpg --list-secret-keys
+   30  gpg --output alejandra.gpg --export 00132820@uca.edu.sv
+   31  gpg --armor --export 00132820@uca.edu.sv
+   32  gpg --export-secret-keys --armor 00132820@uca.edu.sv > ./my-priv-gpg-key.asc
+   33  touch miguel.gpg
+   34  nano miguel.gpg
+   35  gpg --import ~/Downloads/miguel.gpg
+   36  cd laboratorio1
+   37  cat miguel.gpg
+   38  ls
+   39  nano miguel.gpg
+   40  cat miguel.gpg
+   41  gpg --import ~/Downloads/miguel.gpg
+   42  gpg --import ~/laboratorio1/miguel.gpg
+   43  gpg --list-keys
+   44  gpg --edit-key 00087518.uca.edu.sv
+   45  gpg --edit-key 00087518@uca.edu.sv
+   46  ls
+   47  touch nestor.gpg
+   48  nano nestor.gpg
+   49  gpg --import ~/laboratorio1/nestor.gpg
+   50  gpg --list-keys
+   51  gpg --edit-key 00087518@uca.edu.sv
+   52  gpg --edit-key naldana@uca.edu.sv
+   53  gpg --list-keys
+   54  history > history.txt
+   55  cat history.txt
+   56  gpg --output history.txt.gpg --symmetric history.txt
+   57  cat history.txt
+   58  cat history.txt.gpg
+   59  history > historyPublicKey.txt
